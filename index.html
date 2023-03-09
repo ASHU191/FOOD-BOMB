@@ -1,0 +1,286 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="shortcut icon" href="favicon.webp" type="image/x-icon">
+
+    <!-- cdn file  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Food Bomb</title>
+    <link rel="shortcut icon"  href="img/logo.png">
+</head>
+
+<body>
+
+    <!-- header-section  -->
+
+    <header id="home">
+
+        <nav class="navBar flex">
+            <div class="logo">
+                <h2>Food<span>Bomb</span></h2>
+            </div>
+            <div class="nav-menu">
+                <ul class="flex menus">
+                    <li><a href="#home" class="hover-link"  onclick="barclose()">Home</a></li>
+                    <li><a href="#about" class="hover-link"  onclick="barclose()">About</a></li>
+                    <li><a href="#menu" class="hover-link"  onclick="barclose()">Menu</a></li>
+                    <li><a href="#" class="hover-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu-buttons primaryButton flex">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                <input type="checkbox"  id="check">
+                <label for="check">
+                <i class="fa-solid fa-bars" id="bars" onmouseenter="baropen()" onclick="barclose()"></i>
+            </label>
+            </div>
+        </nav>
+
+        <!-- hero-section  -->
+
+        <section class="hero-section">
+            <div class=" flex hero-content">
+
+                <div class="hero-left">
+                    <img src="./img/home.png" alt="">
+                </div>
+
+                <div class="hero-right flex">
+                    <h1><span>Welcome</span> to The world of Tasty & Fresh Food</h1>
+                    <p>Molestie ac feugiat sed lectus. Cursus sit amet
+                        dictum sit amet. Egestas diam in arcu</p>
+                    <a href="#" class="primaryButton">Book a Table</a>
+                </div>
+
+            </div>
+        </section>
+    </header>
+
+
+    <!-- categoery-section  -->
+
+    <section class="categoery-section container">
+
+        <div class="category-header flex">
+            <h2>Breakfast</h2>
+            <p>9.00 am - 11.00 am</p>
+        </div>
+        <div class="container small-cards">
+
+            <div class="category-card flex">
+                <img src="./img/b1.png" alt="logo">
+                <span>Tasty & Fresh</span>
+            </div>
+
+            <div class="category-card flex">
+                <img src="./img/b2.png" alt="logo">
+                <span>Tasty & Fresh</span>
+            </div>
+
+            <div class="category-card flex">
+                <img src="./img/b3.png" alt="logo">
+                <span>Tasty & Fresh</span>
+            </div>
+
+            <div class="category-card flex">
+                <img src="./img/b4.png" alt="logo">
+                <span>Tasty & Fresh</span>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- About-Section -->
+
+    <section class="About-section" id="about">
+        <div class="container about-content flex">
+
+            <div class="about-left">
+                <img src="./img/about.png" alt="image">
+            </div>
+            <div class="about-right flex">
+                <h2>
+                    The Healthy Food For walthy Mood</h2>
+                <p>Molestie ac feugiat sed lectus. Cursus sit amet dictum sit amet.Egestas diam in arcu cursus euismod
+                    quis viverra. Eget gravida cum sociis natoque penatibus et magnis</p>
+
+                 <a href="#" class="primaryButton">Book a Table</a>   
+            </div>
+
+        </div>
+    </section>
+
+    <!-- menu-section  -->
+
+    <section class="menu-section" id="menu">
+         
+        <div class="menu-header flex">
+ <h2>Most Popular Dishes</h2>
+ <p>Consectetur numquam poro nemo veniam
+    eligendi rem adipisci quo modi</p>
+        </div>
+
+            <div class="menu-cards flex">
+   
+                <div class="menu-card flex">
+                    <img src="./img/m1.jpg" alt="image">
+                    <div class="heading flex">
+                        <h2>ITALIAN PIZZA</h2>
+                        <span>$20</span>
+                    </div>
+                    <p>Molestie ac feugiat sed lectusCursus sit amet dictum sit ametEgestas diam in arcu</p>
+                    <div class="stars flex">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="menu-card flex">
+                    <img src="./img/m2.jpg" alt="image">
+                    <div class="heading flex">
+                        <h2>GREEK BURGER</h2>
+                        <span>$15</span>
+                    </div>
+                    <p>Molestie ac feugiat sed lectusCursus sit amet dictum sit ametEgestas diam in arcu</p>
+                    <div class="stars flex">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="menu-card flex">
+                    <img src="./img/m3.jpg" alt="image">
+                    <div class="heading flex">
+                        <h2>SPICY CRUNCH BROAST</h2>
+                        <span>$16</span>
+                    </div>
+                    <p>Molestie ac feugiat sed lectusCursus sit amet dictum sit ametEgestas diam in arcu</p>
+                    <div class="stars flex">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="menu-card flex">
+                    <img src="./img/m4.jpg" alt="image">
+                    <div class="heading flex">
+                        <h2>CHICKEN GLAXY</h2>
+                        <span>$10</span>
+                    </div>
+                    <p>Molestie ac feugiat sed lectusCursus sit amet dictum sit ametEgestas diam in arcu</p>
+                    <div class="stars flex">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="menu-card flex">
+                    <img src="./img/m5.jpg" alt="image">
+                    <div class="heading flex">
+                        <h2>GERMAN SHAWARMA</h2>
+                        <span>$17</span>
+                    </div>
+                    <p>Molestie ac feugiat sed lectusCursus sit amet dictum sit ametEgestas diam in arcu</p>
+                    <div class="stars flex">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="menu-card flex">
+                    <img src="./img/m6.jpg" alt="image">
+                    <div class="heading flex">
+                        <h2>ARABIC SANDWICH</h2>
+                        <span>$12</span>
+                    </div>
+                    <p>Molestie ac feugiat sed lectusCursus sit amet dictum sit ametEgestas diam in arcu</p>
+                    <div class="stars flex">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+    <!-- footer  -->
+
+    <footer>
+        <div class="container flex footer-columns">
+       
+            <div class="footer-col flex">
+                <h4>Services</h4>
+                <ul class="flex footer-menu">
+                    <li><a href="#" class="hover-link">Home</a></li>
+                    <li><a href="#" class="hover-link">About</a></li>
+                    <li><a href="#" class="hover-link">Menu</a></li>
+                    <li><a href="#" class="hover-link">Contact</a></li>
+                </ul>
+            </div>
+          
+            <div class="footer-col flex">
+                <h4>Partners</h4>
+                <ul class="flex footer-menu">
+                    <li><a href="#" class="hover-link">Food Panda</a></li>
+                    <li><a href="#" class="hover-link">Foodie</a></li>
+                    <li><a href="#" class="hover-link">Food Bomb</a></li>
+                    <li><a href="#" class="hover-link">Fresh Foods</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col flex">
+                <h4>Contact</h4>
+                <ul class="flex footer-menu">
+                    <li><a href="#" class="hover-link">Contact us</a></li>
+                    <li><a href="#" class="hover-link">Press Center</a></li>
+                    <li><a href="#" class="hover-link">Careers</a></li>
+                    <li><a href="#" class="hover-link">Faq</a></li>
+                </ul>
+            </div>
+            <div class="footer-col flex">
+                <h4>Follow us</h4>
+                <ul class="flex footer-menu">
+                    <li><a href="https://www.facebook.com/profile.php?id=100010565284145" class="hover-link">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/aftab_arsalan/" class="hover-link">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/arsalan-aftab-69674624b/" class="hover-link">Linkedin</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+
+<div class="sub-footer">
+    <span>© 2023 FOOD BOMB. All Rights Reserved by Muhammad Arsalan Aftab</span>
+</div>
+
+    </footer>
+
+<script src="./main.js"></script>
+
+</body>
+
+</html>
